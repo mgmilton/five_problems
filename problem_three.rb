@@ -6,12 +6,11 @@ def fibby(iterations)
   num1 = 0
   num2 = 1
   num3 = 0
-  (iterations-1).times do
+  print("#{num1}" + " " + "#{num2}")
+  (iterations-2).times do
     num3 = num2 + num1
-    print(num1, num2, num3)
+    print(" " + "#{num3}")
     num1 = num2
     num2 = num3
   end
 end
-
-fibby(10)

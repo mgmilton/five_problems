@@ -3,6 +3,16 @@
 
 require "pry"
 def rearranger(array)
+  characters = array.map(&:to_s)
+  num = ""
+  temp = []
+  characters.each_with_index do |character, index|
+    if character.length > 1
+      temp << character[0].to_i
+    else
+      temp << array[index]
+    end
+  end
   binding.pry
 end
 
